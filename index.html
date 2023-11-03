@@ -1,0 +1,2508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="animate.min.css" />
+    <link rel="stylesheet" href="animation.css" />
+    <title>SkillUp IT Academy : An IT Training Institute</title>
+  </head>
+
+  <body>
+    <a
+      href="tel:+917208581498"
+      class="call-btn btn m-0 text-decoration-none d-block d-md-none d-lg-none"
+      >Call Now</a
+    >
+    <button
+      class="log-btn btn m-0 text-decoration-none d-block d-md-none d-lg-none"
+      onclick="login()"
+    >
+      LogIn
+    </button>
+
+    <div id="main-wrap" class="main-wrapper-1 container-fluid col-lg-6 col-12">
+      <div class="row justify-content-center">
+        <div class="col-xl-10 col-12 col-lg-6">
+          <div class="card border-0 shadow">
+            <div class="card-body p-0">
+              <div class="row no-gutters">
+                <div class="col-12">
+                  <div class="p-4">
+                    <div class="mb-2">
+                      <a
+
+                        id="Down"
+                        style="
+                          position: absolute;
+                          right: 1rem;
+                          top: 0.4rem;
+                          font-weight: bolder;
+                        "
+                        onclick="login_close()"
+                        ><i class="fa-solid fa-xmark user-select-none"></i></a
+                      >
+                      <h3 class="h4 font-weight-bold text-theme">
+                        Please enter your credentials
+                      </h3>
+                    </div>
+                    <form>
+                      <div class="mb-3">
+                        <label for="username">Username:</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          style="
+                            border: 1px solid #ced4da;
+                            padding: 0.375rem 0.75rem;
+                          "
+                          id="username"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="password">Password:</label>
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="password"
+                          required
+                        />
+                      </div>
+                      <div class="d-flex justify-content-center">
+                        <button
+                        class="login-btn border-0"
+                        data-animation="fadeInUp"
+                        data-delay=".6s"
+                        type="submit"
+                      >
+                        <span class=" btn-text text-white fw-bold text-center">LOG IN</span>
+                      </button>
+                      </div>
+                      
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card-body -->
+      </div>
+      <!-- end col -->
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <div class="header">
+      <div class="container-fluid header-contact">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="col-xl-6 col-lg-6 col-md-6">
+                <div
+                  class="header-contact-phone phone-number d-flex align-items-center"
+                >
+                  <i class="fas fa-phone pt-3 p-2"></i>
+                  <span class="">70208581498</span>
+                </div>
+              </div>
+            </div>
+            <div class="col d-flex justify-content-end align-items-center">
+              <div
+                class="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-end"
+              >
+                <div class="header-social-icon">
+                  <ul class="social-icon-header-ul p-0 m-0 pe-2">
+                    <li class="">
+                      <a href="#"
+                        ><i
+                          class="fa-brands ti-facebook"
+                          style="color: #fbfcfe"
+                        ></i
+                      ></a>
+                    </li>
+                    <li><span class="vertical"></span></li>
+
+                    <li>
+                      <a href="#"
+                        ><i
+                          class="fa-brands ti-google"
+                          style="color: #fbfcfe"
+                        ></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid nav-bar-top">
+      <div class="container">
+        <div class="row">
+          <div class="col col-xl-6 col-lg-6 col-md-6">
+            <div class="header-icon p-2">
+              <a href="#">
+                <img
+                  class="header-icon-img img-fluid"
+                  src="images/logo.jpeg"
+                  alt=""
+                />
+              </a>
+              <p class="fs-6">Microsoft Official Partner</p>
+            </div>
+          </div>
+          <div
+            class="col col-me-auto d-flex align-items-center justify-content-end"
+          >
+            <div
+              role="button"
+              class="px-4 login-btn-container d-none d-lg-block"
+            >
+              <div
+                class="login-btn text-uppercase user-select-none text-white fw-semibold"
+                onclick="login()"
+              >
+                login
+              </div>
+            </div>
+            <div
+              role="button"
+              class="menu-btn px-5 user-select-none"
+              onclick="on()"
+            >
+              <span class="fs-3">☰</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner">
+      <div class="">
+        <div class="banner-img-container owl-carousel">
+          <div class="item banner-item1 d-flex align-items-center">
+            <div class="container px-5">
+              <h1
+                class="white-color f-700 slide-title"
+                data-animation="fadeInUp"
+                data-delay=".2s"
+              >
+                <span>
+                  <span class="pink_c">Skill</span>
+                  <span class="blue_c">Up</span>
+                  <span class="pink_c"> IT</span>
+                  <span class="blue_c"> Academy</span>
+                </span>
+              </h1>
+              <h2
+                class="mb-4 slide-title2"
+                data-animation="fadeInUp"
+                data-delay=".4s"
+              >
+                Education Needs Complete Solution
+              </h2>
+              <a href="#login" class="text-decoration-none">
+                <div
+                  role="button"
+                  class="slide-title3 login-btn px-4"
+                  data-animation="fadeInUp"
+                  data-delay=".6s"
+                >
+                  <span class="text-white text-uppercase fs-6 fw-semibold"
+                    >Enquire Now</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <div class="banner-item2 item d-flex align-items-center">
+            <div class="container px-5">
+              <h1
+                class="white-color f-700 slide-title"
+                data-animation="fadeInUp"
+                data-delay=".2s"
+              >
+                <span>
+                  <span class="pink_c">Skill</span>
+                  <span class="blue_c">Up</span>
+                  <span class="pink_c"> IT</span>
+                  <span class="blue_c"> Academy</span>
+                </span>
+              </h1>
+              <h2
+                class="mb-4 slide-title2"
+                data-animation="fadeInUp"
+                data-delay=".4s"
+              >
+                Education Needs Complete Solution
+              </h2>
+              <a href="#login" class="text-decoration-none">
+                <div
+                  role="button"
+                  class="slide-title3 login-btn px-4"
+                  data-animation="fadeInUp"
+                  data-delay=".6s"
+                >
+                  <span class="text-white text-uppercase fs-6 fw-semibold"
+                    >Enquire Now</span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutus pt-5">
+      <div class="container-fluid">
+        <div class="container text-center">
+          <div class="aboutus-heading pb-5 mb-5">
+            <h1
+              class="wow fadeInUp"
+              data-wow-delay="0.3s"
+              style="
+                visibility: visible;
+                animation-delay: 0.3s;
+                animation-name: fadeInUp;
+              "
+            >
+              <span>
+                <span class="pink_c">About</span>
+                <span class="blue_c">US</span>
+              </span>
+            </h1>
+          </div>
+          <div
+            class="aboutus-cards d-flex flex-wrap justify-content-center gap-5 wow fadeInUp"
+            data-wow-delay=".5s"
+          >
+            <div class="aboutus-card p-4" style="width: 33rem">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img
+                    src="images/PROFILE_SKILLUP_LOGO-02.png"
+                    width="50px"
+                    style="border: black solid 1px; border-radius: 50%"
+                    alt=""
+                    class="m-0 p-0"
+                  />
+                  <h5 class="card-title mx-3 pt-1 pb-0 text-start text-muted">
+                    skillupitacademy
+                  </h5>
+                </div>
+
+                <p
+                  class="card-text text-dark ext-start fs-5 mt-3 mb-5 pb-5 wow bounceInLeft"
+                  data-wow-delay="1s"
+                  data-wow-duration="1s"
+                >
+                  We at SkillUp IT Academy ensure that students are not only
+                  getting trained, educated in IT subjects or programming
+                  languages but also getting skilled so that they can explore
+                  knowledge and create new opportunities, innovation in this
+                  competitive and dynamic world.
+                </p>
+                <div class="d-flex aboutus-card-base pt-4">
+                  <img
+                    src="images/PROFILE_SKILLUP_LOGO-02.png"
+                    width="50px"
+                    style="border: black solid 1px; border-radius: 50%"
+                    alt=""
+                    class="m-0 p-0"
+                  />
+                  <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                    skillupitacademy
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="aboutus-card p-4" style="width: 33rem">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img
+                    src="images/PROFILE_SKILLUP_LOGO-02.png"
+                    width="50px"
+                    style="border: black solid 1px; border-radius: 50%"
+                    alt=""
+                    class="m-0 p-0"
+                  />
+                  <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                    skillupitacademy
+                  </h5>
+                </div>
+
+                <p
+                  class="card-text text-dark text-start fs-5 mt-3 mb-5 pb-5 wow bounceInLeft"
+                  data-wow-delay="1s"
+                  data-wow-duration="1s"
+                >
+                  We at SkillUp IT Academy work on to build platform where skill
+                  and ability can match up to build bright future of current and
+                  future generations. We believe in training where we train
+                  students to explore knowledge rather than settle on the
+                  existing skills they have.
+                </p>
+                <div class="d-flex aboutus-card-base pt-4">
+                  <img
+                    src="images/PROFILE_SKILLUP_LOGO-02.png"
+                    width="50px"
+                    style="border: black solid 1px; border-radius: 50%"
+                    alt=""
+                    class="m-0 p-0"
+                  />
+                  <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                    skillupitacademy
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <div class="aboutus-card p-4" style="width: 33rem">
+              <div class="card-body">
+                <div class="d-flex">
+                  <img
+                    src="images/PROFILE_SKILLUP_LOGO-02.png"
+                    width="50px"
+                    style="border: black solid 1px; border-radius: 50%"
+                    alt=""
+                    class="m-0 p-0"
+                  />
+                  <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                    skillupitacademy
+                  </h5>
+                </div>
+
+                <p
+                  class="card-text text-dark text-start fs-5 mt-3 mb-5 pb-5 wow bounceInLeft"
+                  data-wow-delay="1s"
+                  data-wow-duration="1s"
+                >
+                  Through our extensive feedback-oriented training, practice,
+                  assignments, projects we ensure to achieve our company's
+                  objectives, values, mission and belief towards kids, students,
+                  professionals who aim IT as their dream career and prospects.
+                </p>
+                <div class="d-flex aboutus-card-base pt-4">
+                  <img
+                    src="images/PROFILE_SKILLUP_LOGO-02.png"
+                    width="50px"
+                    style="border: black solid 1px; border-radius: 50%"
+                    alt=""
+                    class="m-0 p-0"
+                  />
+                  <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                    skillupitacademy
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ourmodules py-5 my-5">
+      <div class="container-fluid">
+        <div class="text-center">
+          <div class="row py-5">
+            <div class="col">
+              <div
+                class="ourmodules-heading wow fadeInUp"
+                data-wow-duration=".5s"
+              >
+                <h1>
+                  <span>
+                    <span class="pink_c">Our</span>
+                    <span class="blue_c">Modules</span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div
+              class="row ourmodules-cards row justify-content-center wow fadeInUp"
+              data-wow-duration=".5s"
+            >
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card">
+                    <div
+                      class="card-body text-white p-4"
+                      style="background-color: #7665ff"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Fundamental Module</h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        Success is the natural consequence of consistently
+                        applying the basic fundamentals.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/fundamental.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                      Fundamental Module
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card" style="width: 18rem">
+                    <div
+                      class="card-body text-white p-4"
+                      style="background-color: #f5b016"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Webdesign Module</h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        SWhat separates design from art is that design is meant
+                        to be... functional.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/webdesign.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                      Fundamental Module
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card" style="width: 18rem">
+                    <div
+                      class="card-body text-white p-4"
+                      style="background-color: red"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Business Module</h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        Excel at doing what your passion is and only focus on
+                        perfecting it.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/bussiness.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                      Fundamental Module
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enrollNow mt-5">
+      <div
+        class="enrollNow-inner d-flex flex-column align-items-center justify-content-center container-fluid text-center text-white mt-5"
+      >
+        <h1 class="fs-1 fw-bold mt-4 wow fadeInUp" data-wow-duration=".5s">
+          Start a Journey. Enroll Now.
+        </h1>
+        <p
+          class="text-secondary wow fadeInLeft"
+          data-wow-duration="1s"
+          style="letter-spacing: 3px"
+        >
+          LEARN SOMETHING WHEREVER YOU ARE
+        </p>
+        <div
+          role="button"
+          class="login-btn p-3 mt-4 wow fadeInRight"
+          data-wow-duration="1s"
+          style="width: 300px"
+        >
+          <span class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+            >JOIN A COURSE NOW</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="ourmodules py-5 my-5">
+      <div class="container-fluid">
+        <div class="text-center px-0">
+          <div class="row py-5">
+            <div class="col p-0">
+              <div class="ourmodules-heading">
+                <h1 class="wow fadeInUp" data-wow-duration=".5s">
+                  <span>
+                    <span class="pink_c">Our</span>
+                    <span class="blue_c">Modules</span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div
+              class="row ourmodules-cards justify-content-center wow fadeInUp"
+              data-wow-duration="1s"
+            >
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card" style="width: 18rem">
+                    <div
+                      class="card-body text-white p-4"
+                      style="background-color: #7665ff"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Placement Module</h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        Success is the natural consequence of consistently
+                        applying the basic fundamentals.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/placement.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                      Placement Module
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card">
+                    <div
+                      class="card-body text-white p-4"
+                      style="background-color: #f5b016"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Infrastructure Module</h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        SWhat separates design from art is that design is meant
+                        to be... functional.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/couldcomputing.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                      Infrastructure Module
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card">
+                    <div
+                      class="card-body text-white p-4"
+                      style="background-color: red"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Testing Module</h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        Excel at doing what your passion is and only focus on
+                        perfecting it.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/testing.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                      Testing Module
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="features mt-5 py-5 mb-5">
+      <div class="features-inner">
+        <div
+          class="counter-cards d-flex justify-content-center gap-4 flex-wrap text-center wow fadeInUp"
+          data-wow-duration="1s"
+        >
+          <div
+            class="counter-card d-flex justify-content-center border border-0 wow bounceInLeft"
+            data-wow-duration="1s"
+          >
+            <div class="card-body">
+              <img src="images/counter_icon1.png" width="70px" alt="" />
+              <h4 class="card-subtitle mt-4 fw-bold">100+ Topics</h4>
+              <p class="card-text text-uppercase mt-2" style="font-size: 13px">
+                learn anything
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="counter-card d-flex justify-content-center border border-0 wow bounceInUp"
+            data-wow-duration="1s"
+          >
+            <div class="card-body">
+              <img src="images/counter_icon2.png" width="70px" alt="" />
+              <h4 class="card-subtitle mt-4 fw-bold">1900+ Students</h4>
+              <p class="card-text text-uppercase mt-2" style="font-size: 13px">
+                FUTURE GENIUS
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="counter-card d-flex justify-content-center border border-0 wow bounceInDown"
+            data-wow-duration="1s"
+          >
+            <div class="card-body">
+              <img src="images/counter_icon3.png" width="70px" alt="" />
+              <h4 class="card-subtitle mt-4 fw-bold">15900 Tests Taken</h4>
+              <p class="card-text text-uppercase mt-2" style="font-size: 13px">
+                THATS A LOT
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="counter-card d-flex justify-content-center border border-0 wow bounceInRight"
+            data-wow-duration="1s"
+          >
+            <div class="card-body">
+              <img src="images/counter_icon4.png" width="70px" alt="" />
+              <h4 class="card-subtitle mt-4 fw-bold">10+ Instructors</h4>
+              <p class="card-text text-uppercase mt-2" style="font-size: 13px">
+                ALL TRAINED PROFESSIONALS
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enrollNow mt-5">
+      <div
+        class="enrollNow-inner d-flex flex-column align-items-center justify-content-center container-fluid text-center text-white mt-5"
+      >
+        <h1 class="fs-1 fw-bold mt-4 wow fadeInUp" data-wow-duration="1s">
+          Learning Today. Leading Tomorrow. Enroll Now.
+        </h1>
+        <p
+          class="text-secondary wow fadeInLeft"
+          data-wow-duration="1s"
+          style="letter-spacing: 3px"
+        >
+          LEARN SOMETHING WHEREVER YOU ARE
+        </p>
+        <div
+          role="button"
+          class="login-btn p-3 mt-4 wow fadeInRight"
+          data-wow-duration="1s"
+          style="width: 300px"
+        >
+          <span class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+            >JOIN A COURSE NOW</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="ourmodules py-5 my-5">
+      <div class="container-fluid">
+        <div class="container text-center px-0">
+          <div class="row py-5">
+            <div class="col p-0">
+              <div class="ourmodules-heading">
+                <h1 class="wow fadeInUp" data-wow-duration="1s">
+                  <span>
+                    <span class="pink_c">Our</span>
+                    <span class="blue_c">Modules</span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="container">
+            <div
+              class="row ourmodules-cards justify-content-center wow fadeInUp"
+              data-wow-duration="1s"
+            >
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card">
+                    <div
+                      class="card-body text-white px-4 pt-0"
+                      style="background-color: #fd29c5"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-4">
+                        Data Science & Visualization
+                      </h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        Success is the natural consequence of consistently
+                        applying the basic fundamentals.
+                      </p>
+
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/placement.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-5 fw-semibold pb-3 border-bottom">
+                      Data Science & Visualization
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">
+                      Core programming
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card">
+                    <div
+                      class="card-body text-white px-4 pt-0"
+                      style="background-color: #0eb582"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-4">
+                        Cyber Security & Bitcoin Modules
+                      </h1>
+                      <p
+                        class="border-bottom border-dark-subtle pb-5"
+                        style="font-size: 18px"
+                      >
+                        What separates design from art is that design is meant
+                        to be... functional.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/couldcomputing.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-5 fw-semibold pb-3 border-bottom">
+                      Cyber Security & Bitcoin
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">Core Designing</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-3 col-xl-4 col-lg-4 col-md-6 col-12 centered">
+                <div class="card ourmodules-card text-start">
+                  <div class="card ourmodules-hover-card">
+                    <div
+                      class="card-body text-white px-4 pt-0"
+                      style="background-color: #7665ff"
+                    >
+                      <div
+                        class="mt-5 mt-4 px-0 text-center"
+                        style="
+                          background-color: rgba(255, 255, 255, 0.2);
+                          height: 30px;
+                          width: 100px;
+                          border-radius: 5px;
+                        "
+                      >
+                        <p class="any_stream">Any Stream</p>
+                      </div>
+                      <h1 class="fw-bold fs-3 my-5">Trending Courses</h1>
+                      <p
+                        class="border-bottom cource_dis border-dark-subtle pb-5"
+                      >
+                        Success is the natural consequence of consistently
+                        applying the basic fundamentals.
+                      </p>
+                      <div class="ratings mt-3">
+                        <div class="d-flex justify-content-center px-3">
+                          <ul
+                            class="d-flex gap-1 mt-2 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div
+                          role="button"
+                          class="login-btn for_more_detail_btn"
+                        >
+                          <span
+                            class="text-white text-uppercase px-0 p-0 fw-semibold"
+                            >FOR MORE DETAILS</span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <img
+                    src="images/testing.jpg"
+                    class="card-img-top"
+                    alt="..."
+                    height="200px"
+                  />
+                  <div class="badge d-flex gap-1">
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/badge.png" alt=""
+                    /></span>
+                    <span
+                      class="d-flex p-1 align-items-center justify-content-center"
+                      ><img src="images/certificate.png" alt=""
+                    /></span>
+                  </div>
+                  <div class="card-body p-4">
+                    <div class="card-title pt-2">
+                      <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                        <i class="fa-solid fa-star pe-1"></i>FEATURED
+                      </div>
+                      <p class="text-secondary">Any Stream</p>
+                    </div>
+                    <h5 class="fs-5 fw-semibold pb-3 border-bottom">
+                      Trending Courses
+                    </h5>
+
+                    <div class="d-flex -base pt-2">
+                      <img
+                        src="images/PROFILE_SKILLUP_LOGO-02.png"
+                        width="50px"
+                        style="border: black solid 1px; border-radius: 50%"
+                        alt=""
+                        class="m-0 p-0"
+                      />
+                      <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                        skillupitacademy
+                      </h5>
+                    </div>
+                    <div class="btn mt-4 fs-6 rounded-pill">Core Designing</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="enrollNow my-5">
+      <div
+        class="enrollNow-inner d-flex flex-column align-items-center justify-content-center container-fluid text-center text-white mt-5"
+        style="background-color: #f7f9f9"
+      >
+        <h1 class="fs-1 fw-semibold mt-4 wow fadeInUp text-dark">
+          Discover Your Future With US. Enroll Now.
+        </h1>
+        <p
+          class="text-secondary wow fadeInLeft"
+          data-wow-duration="1s"
+          style="letter-spacing: 3px"
+        >
+          LEARN SOMETHING WHEREVER YOU ARE
+        </p>
+        <div
+          role="button"
+          class="login-btn p-3 mt-4 d-flex align-items-center wow fadeInRight"
+          data-wow-duration="1s"
+          style="width: fit-content"
+        >
+          <span class="text-white text-uppercase px-4 p-0 fs-6 fw-semibold"
+            >JOIN A COURSE NOW</span
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container-fluid d-flex pt-5 align-items-center">
+        <div
+          class="container footer-inner d-flex justify-content-between flex-wrap"
+        >
+          <div class="footer-cards">
+            <div class="footer-card card" style="width: fit-content">
+              <div class="card-body">
+                <h4 class="card-title pb-3 fw-bold footer-card-title">
+                  Popular Courses
+                </h4>
+                <ul class="footer-list">
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Full Stack Development</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Data Science</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Web APP</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">APP Development</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Deep Learning</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Python</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-cards">
+            <div class="footer-card card" style="width: fit-content">
+              <div class="card-body">
+                <h4 class="card-title pb-3 fw-bold footer-card-title">
+                  Quick Links
+                </h4>
+                <ul class="footer-list">
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Placement Modules</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Business Modules</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Web Designing Modules</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Cyber Security Modules</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Bitcoin Modules</a>
+                  </li>
+                  <li class="wow fadeInUp" data-wow-duration="1s">
+                    <a href="" class="card-text">Cryptocurrency Modules</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-cards">
+            <div class="footer-card card" style="width: t">
+              <div class="card-body">
+                <h4 class="card-title pb-3 fw-bold footer-card-title">
+                  Contact Us
+                </h4>
+                <ul class="footer-list">
+                  <li class="pb-2 wow fadeInUp" data-wow-duration="1s">
+                    <span><i class="fas fa-phone"></i></span>
+                    <span class="footer-contact-list-text">7208581498 </span>
+                  </li>
+                  <li class="pb-2 wow fadeInUp" data-wow-duration="1s">
+                    <span class="ti-email"></span>
+                    <span class="footer-contact-list-text"
+                      >info@skillupitacademy.com</span
+                    >
+                  </li>
+                  <li class="pb-2 wow fadeInUp" data-wow-duration="1s">
+                    <span class="ti-location-pin"></span>
+                    <span class="footer-contact-list-text"
+                      >807 Time Chambers S.V. ROAD Andheri (W)</span
+                    >
+                  </li>
+                  <li class="pb-2 wow fadeInUp" data-wow-duration="1s">
+                    <span class="ti-location-pin"></span>
+                    <span class="footer-contact-list-text"
+                      >B-205 2nd Flr. Neelyog Square Ghatkopar (E)</span
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright text-center pt-3 pb-4">
+        <span>SkillUp IT Academy All Rights Reserved 7208</span>
+      </div>
+    </div>
+
+    <div class="overlay">
+      <div role="button" class="mt-4 nav-cancel-btn" onclick="off()">
+        <i class="fa-solid fa-xmark fa-2xl"></i>
+      </div>
+      <div class="container mt-5 pt-5">
+        <div class="nav-bar-pop-up">
+          <div class="row nav-bar-btn nav-bar-logo justify-content-center m-4">
+            <div class="col-7 text-center">
+              <img
+                class="header-icon-img img-fluid"
+                src="images/logo.jpeg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Fundamental Modules</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Business Modules</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Web Designing Modules</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Placement Modules</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Infrastructure Modules</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Testing Modules</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a
+                  href=""
+                  class="fs-4 fw-semibold text-white text-decoration-none"
+                  >Data Science & Visualization</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="row nav-bar-btn justify-content-center m-4">
+            <div class="col-7 text-center nav-btn">
+              <div role="button">
+                <a href="" class="fw-semibold text-white text-decoration-none"
+                  >Cyber Security & Bitcoin Modules</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="Related-courses mb-5">
+      <div class="container-fluid">
+        <div class="container text-center px-0">
+          <div class="row p-0">
+            <div class="col p-0">
+              <div class="ourmodules-heading">
+                <h1>
+                  <span>
+                    <span class="pink_c">Related </span>
+                    <span class="blue_c">Courses</span>
+                  </span>
+                </h1>
+              </div>
+            </div>
+          </div>
+
+          <div class="row p-0">
+            <div class="col px-0">
+              <div
+                class="ourmodules-cards carasoul-cards owl-carousel d-flex justify-content-center flex-wrap gap-4"
+              >
+                <div class="part-1 d-flex gap-4 justify-content-center align-items-center pb-5 mb-5">
+                  <div
+                    class="card ourmodules-card text-start"
+                    style="width: 23rem"
+                  >
+                    <div
+                      class="card ourmodules-hover-card"
+                      style="width: 18rem"
+                    >
+                      <div
+                        class="card-body text-white p-4"
+                        style="background-color: #3498db"
+                      >
+                        <div
+                          class="mt-5 mt-4 text-start"
+                          style="
+                            background-color: #ffffff16;
+                            height: fit-content;
+                            width: fit-content;
+                            border-radius: 5px;
+                          "
+                        >
+                          <p class="py-2 px-2 mb-4">All Graduates Stream</p>
+                        </div>
+                        <h4 class="fw-bold my-3 text-dark pb-3 border-bottom">
+                          MERN - JavaScript Framework
+                        </h4>
+                        <p
+                          class="border-dark-subtle pb-1"
+                          style="font-size: 18px"
+                        >
+                          Full Stack 3-Tire Application Development
+                        </p>
+                        <p
+                          class="border-bottom border-dark-subtle pb-3"
+                          style="font-size: 18px"
+                        >
+                          Duration: 3 months*
+                        </p>
+                        <div
+                          class="d-flex justify-content-center mt-5 pt-5 gap-4 align-items-center"
+                        >
+                          <ul
+                            class="d-flex gap-1 mt-3 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                          <div role="button" class="login-btn p-3">
+                            <span
+                              class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+                              >click to enquire</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="images/course22.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      height="200px"
+                    />
+                    <div class="badge d-flex gap-1">
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/badge.png" alt=""
+                      /></span>
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/certificate.png" alt=""
+                      /></span>
+                    </div>
+                    <div class="card-body p-4">
+                      <div class="card-title pt-2">
+                        <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                          <i class="fa-solid fa-star pe-1"></i>FEATURED
+                        </div>
+                        <p class="text-secondary">All Graduates Stream</p>
+                      </div>
+                      <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                        MERN Stack Development
+                      </h5>
+
+                      <div class="d-flex -base pt-2">
+                        <img
+                          src="images/PROFILE_SKILLUP_LOGO-02.png"
+                          style="border: black solid 1px; border-radius: 50%"
+                          alt=""
+                          class="carasoul-card-logo m-0 p-0"
+                        />
+                        <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                          skillupitacademy
+                        </h5>
+                      </div>
+                      <div class="btn mt-4 fs-6 rounded-pill">
+                        Open Source Solution
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card ourmodules-card text-start"
+                    style="width: 23rem"
+                  >
+                    <div
+                      class="card ourmodules-hover-card"
+                      style="width: 18rem"
+                    >
+                      <div
+                        class="card-body text-white p-4"
+                        style="background-color: #d5c02a"
+                      >
+                        <div
+                          class="mt-5 mt-4 text-start"
+                          style="
+                            background-color: #ffffff16;
+                            height: fit-content;
+                            width: fit-content;
+                            border-radius: 5px;
+                          "
+                        >
+                          <p class="py-2 px-2 mb-4">All Graduates Stream</p>
+                        </div>
+                        <h4 class="my-3 fw-bold text-dark pb-3 border-bottom">
+                          Full Stack Development - .NET
+                        </h4>
+                        <p
+                          class="border-dark-subtle pb-1"
+                          style="font-size: 18px"
+                        >
+                          Cross Platform Development Solution
+                        </p>
+                        <p
+                          class="border-bottom border-dark-subtle pb-3 mb-5"
+                          style="font-size: 18px"
+                        >
+                          Duration: 3 months*
+                        </p>
+                        <div
+                          class="d-flex justify-content-center mt-5 pt-5 gap-4 align-items-center"
+                        >
+                          <ul
+                            class="d-flex gap-1 mt-3 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                          <div role="button" class="login-btn p-3">
+                            <span
+                              class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+                              >click to enquire</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="images/course20.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      height="200px"
+                    />
+                    <div class="badge d-flex gap-1">
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/badge.png" alt=""
+                      /></span>
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/certificate.png" alt=""
+                      /></span>
+                    </div>
+                    <div class="card-body p-4">
+                      <div class="card-title pt-2">
+                        <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                          <i class="fa-solid fa-star pe-1"></i>FEATURED
+                        </div>
+                        <p class="text-secondary">All Graduates Stream</p>
+                      </div>
+                      <h5 class="fs-5 fw-semibold pb-3 border-bottom">
+                        Full Stack Development - .NET
+                      </h5>
+
+                      <div class="d-flex -base pt-2">
+                        <img
+                          src="images/PROFILE_SKILLUP_LOGO-02.png"
+                          width="50px"
+                          style="border: black solid 1px; border-radius: 50%"
+                          alt=""
+                          class="m-0 p-0 carasoul-card-logo"
+                        />
+                        <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                          skillupitacademy
+                        </h5>
+                      </div>
+                      <div class="btn mt-4 fs-6 rounded-pill">
+                        International certification*
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card ourmodules-card text-start"
+                    style="width: 23rem"
+                  >
+                    <div
+                      class="card ourmodules-hover-card"
+                      style="width: 18rem"
+                    >
+                      <div
+                        class="card-body text-white p-4"
+                        style="background-color: #f9242a"
+                      >
+                        <div
+                          class="mt-5 mt-4 text-start"
+                          style="
+                            background-color: #ffffff16;
+                            height: fit-content;
+                            width: fit-content;
+                            border-radius: 5px;
+                          "
+                        >
+                          <p class="py-2 px-2 mb-4">All Graduates Stream</p>
+                        </div>
+                        <h4 class="my-3 fw-bold text-dark pb-3 border-bottom">
+                          Full Stack Modules - Python
+                        </h4>
+                        <p
+                          class="border-dark-subtle pb-1"
+                          style="font-size: 18px"
+                        >
+                          AI-Based App Development Solution
+                        </p>
+                        <p
+                          class="border-bottom border-dark-subtle pb-3 mb-5"
+                          style="font-size: 18px"
+                        >
+                          Duration: 3 months*
+                        </p>
+                        <div
+                          class="d-flex justify-content-center mt-5 pt-5 gap-4 align-items-center"
+                        >
+                          <ul
+                            class="d-flex gap-1 mt-3 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                          <div role="button" class="login-btn p-3">
+                            <span
+                              class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+                              >click to enquire</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="images/course21.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      height="200px"
+                    />
+                    <div class="badge d-flex gap-1">
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/badge.png" alt=""
+                      /></span>
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/certificate.png" alt=""
+                      /></span>
+                    </div>
+                    <div class="card-body p-4">
+                      <div class="card-title pt-2">
+                        <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                          <i class="fa-solid fa-star pe-1"></i>FEATURED
+                        </div>
+                        <p class="text-secondary">All Graduates Stream</p>
+                      </div>
+                      <h5 class="fs-5 fw-semibold pb-3 border-bottom">
+                        Full Stack Modules - Python
+                      </h5>
+
+                      <div class="d-flex -base pt-2">
+                        <img
+                          src="images/PROFILE_SKILLUP_LOGO-02.png"
+                          width="50px"
+                          style="border: black solid 1px; border-radius: 50%"
+                          alt=""
+                          class="m-0 p-0 carasoul-card-logo"
+                        />
+                        <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                          skillupitacademy
+                        </h5>
+                      </div>
+                      <div class="btn mt-4 fs-6 rounded-pill">
+                        International certification*
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="part-2 part-1 d-flex gap-4 justify-content-start align-items-center pb-5 mb-5">
+                  <div
+                    class="card ourmodules-card text-start"
+                    style="width: 23rem"
+                  >
+                    <div
+                      class="card ourmodules-hover-card"
+                      style="width: 18rem"
+                    >
+                      <div
+                        class="card-body text-white p-4"
+                        style="background-color: #3eaf78"
+                      >
+                        <div
+                          class="mt-5 mt-4 text-start"
+                          style="
+                            background-color: #ffffff16;
+                            height: fit-content;
+                            width: fit-content;
+                            border-radius: 5px;
+                          "
+                        >
+                          <p class="py-2 px-2 mb-4">All Graduates Stream</p>
+                        </div>
+                        <h4 class="my-3 fw-bold text-dark pb-3 border-bottom">
+                          MEAN - JavaScript Framework
+                        </h4>
+                        <p
+                          class="border-dark-subtle pb-1"
+                          style="font-size: 18px"
+                        >
+                          Cloud Ready Development Solution
+                        </p>
+                        <p
+                          class="border-bottom border-dark-subtle pb-3 mb-5"
+                          style="font-size: 18px"
+                        >
+                          Duration: 3 months*
+                        </p>
+                        <div
+                          class="d-flex justify-content-center mt-5 pt-5 gap-4 align-items-center"
+                        >
+                          <ul
+                            class="d-flex gap-1 mt-3 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                          </ul>
+                          <div role="button" class="login-btn p-3">
+                            <span
+                              class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+                              >click to enquire</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="images/course23.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      height="200px"
+                    />
+                    <div class="badge d-flex gap-1">
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/badge.png" alt=""
+                      /></span>
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/certificate.png" alt=""
+                      /></span>
+                    </div>
+                    <div class="card-body p-4">
+                      <div class="card-title pt-2">
+                        <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                          <i class="fa-solid fa-star pe-1"></i>FEATURED
+                        </div>
+                        <p class="text-secondary">All Graduates Stream</p>
+                      </div>
+                      <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                        MEAN Stack Development
+                      </h5>
+
+                      <div class="d-flex -base pt-2">
+                        <img
+                          src="images/PROFILE_SKILLUP_LOGO-02.png"
+                          width="50px"
+                          style="border: black solid 1px; border-radius: 50%"
+                          alt=""
+                          class="m-0 p-0 carasoul-card-logo"
+                        />
+                        <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                          skillupitacademy
+                        </h5>
+                      </div>
+                      <div class="btn mt-4 fs-6 rounded-pill">
+                        Open Source Solution
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="card ourmodules-card text-start"
+                    style="width: 23rem"
+                  >
+                    <div
+                      class="card ourmodules-hover-card"
+                      style="width: 18rem"
+                    >
+                      <div
+                        class="card-body text-white p-4"
+                        style="background-color: #f939c1"
+                      >
+                        <div
+                          class="mt-5 mt-4 text-start"
+                          style="
+                            background-color: #ffffff16;
+                            height: fit-content;
+                            width: fit-content;
+                            border-radius: 5px;
+                          "
+                        >
+                          <p class="py-2 px-2 mb-4">All Graduates Stream</p>
+                        </div>
+                        <h4 class="my-3 fw-bold text-dark pb-3 border-bottom">
+                          Stack Development -AI
+                        </h4>
+                        <p
+                          class="border-dark-subtle pb-1"
+                          style="font-size: 18px"
+                        >
+                          DS, ML, DL Based Development Solution
+                        </p>
+                        <p
+                          class="border-bottom border-dark-subtle pb-3 mb-5"
+                          style="font-size: 18px"
+                        >
+                          Duration: 5 months*
+                        </p>
+                        <div
+                          class="d-flex justify-content-center mt-5 pt-5 gap-4 align-items-center"
+                        >
+                          <ul
+                            class="d-flex gap-1 mt-3 px-0 justify-content-center"
+                            style="list-style: none"
+                          >
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i class="fa-solid fa-star text-warning"></i>
+                            </li>
+                            <li>
+                              <i
+                                class="fa-regular fa-star"
+                                style="color: #e0d915"
+                              ></i>
+                            </li>
+                            <li>
+                              <i
+                                class="fa-regular fa-star"
+                                style="color: #e0d915"
+                              ></i>
+                            </li>
+                          </ul>
+                          <div role="button" class="login-btn p-3">
+                            <span
+                              class="text-white text-uppercase px-0 p-0 fs-6 fw-semibold"
+                              >click to enquire</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <img
+                      src="images/course24.jpg"
+                      class="card-img-top"
+                      alt="..."
+                      height="200px"
+                    />
+                    <div class="badge d-flex gap-1">
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/badge.png" alt=""
+                      /></span>
+                      <span
+                        class="d-flex p-1 align-items-center justify-content-center"
+                        ><img src="images/certificate.png" alt=""
+                      /></span>
+                    </div>
+                    <div class="card-body p-4">
+                      <div class="card-title pt-2">
+                        <div class="btn featured-btn bg-warning mb-3 fs-1-6">
+                          <i class="fa-solid fa-star pe-1"></i>FEATURED
+                        </div>
+                        <p class="text-secondary">All Graduates Stream</p>
+                      </div>
+                      <h5 class="fs-4 fw-semibold pb-3 border-bottom">
+                        Stack Development -AI
+                      </h5>
+
+                      <div class="d-flex -base pt-2">
+                        <img
+                          src="images/PROFILE_SKILLUP_LOGO-02.png"
+                          width="50px"
+                          style="border: black solid 1px; border-radius: 50%"
+                          alt=""
+                          class="m-0 p-0 carasoul-card-logo"
+                        />
+                        <h5 class="card-title mx-3 pt-1 text-start text-muted">
+                          skillupitacademy
+                        </h5>
+                      </div>
+                      <div class="btn mt-4 fs-6 rounded-pill">
+                        Open Source Solution
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="script.js"></script>
+  <script src="wow.min.js"></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"
+  ></script>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+</html>
